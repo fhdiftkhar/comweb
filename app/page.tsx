@@ -1,6 +1,6 @@
 import { Metadata } from "next";
-import { FaRocket, FaCode, FaMobile, FaGlobe, FaArrowRight, FaCheck, FaUsers, FaShieldAlt, FaHeadset, FaClock } from "react-icons/fa";
-import { MdTrendingUp, MdSecurity, MdSpeed } from "react-icons/md";
+import { FaRocket, FaCode, FaMobile, FaGlobe, FaArrowRight, FaCheck, FaUsers, FaShieldAlt, FaHeadset } from "react-icons/fa";
+import { MdSecurity, MdSpeed } from "react-icons/md";
 
 export const metadata: Metadata = {
   title: "Buidoza - No-Code Software Development Experts | Glide Apps, FlutterFlow, AppSheet",
@@ -47,28 +47,28 @@ export const metadata: Metadata = {
 const services = [
   {
     title: "Glide Apps Development",
-    description: "Our most popular service - powerful no-code applications built with Glide's intuitive platform. Perfect for businesses needing custom solutions without traditional coding.",
+    description: "Our most popular service - powerful no-code applications built with Glide&apos;s intuitive platform. Perfect for businesses needing custom solutions without traditional coding.",
     icon: <FaRocket className="text-3xl" />,
     features: ["Custom Business Apps", "Database Integration", "User Management", "Real-time Updates"],
     color: "from-blue-500 to-blue-600"
   },
   {
     title: "FlutterFlow Development",
-    description: "Cross-platform mobile and web applications built with FlutterFlow's visual development platform. Fast, scalable, and cost-effective solutions.",
+    description: "Cross-platform mobile and web applications built with FlutterFlow&apos;s visual development platform. Fast, scalable, and cost-effective solutions.",
     icon: <FaMobile className="text-3xl" />,
     features: ["Mobile & Web Apps", "Firebase Integration", "Custom UI/UX", "Cross-platform"],
     color: "from-purple-500 to-purple-600"
   },
   {
     title: "AppSheet Development",
-    description: "Google's no-code platform for creating powerful mobile applications. Perfect for businesses looking to digitize their operations quickly.",
+    description: "Google&apos;s no-code platform for creating powerful mobile applications. Perfect for businesses looking to digitize their operations quickly.",
     icon: <FaCode className="text-3xl" />,
     features: ["Google Workspace Integration", "Offline Capability", "Advanced Analytics", "Custom Workflows"],
     color: "from-indigo-500 to-indigo-600"
   },
   {
     title: "Bubble App Development",
-    description: "Full-featured web applications built with Bubble's powerful no-code platform. From simple websites to complex business systems.",
+    description: "Full-featured web applications built with Bubble&apos;s powerful no-code platform. From simple websites to complex business systems.",
     icon: <FaGlobe className="text-3xl" />,
     features: ["Web Applications", "Database Design", "API Integrations", "Custom Plugins"],
     color: "from-green-500 to-green-600"

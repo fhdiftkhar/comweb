@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FaLaptop, FaMobile, FaDatabase, FaCloud, FaShieldAlt, FaRocket, FaArrowRight, FaExternalLinkAlt, FaCode, FaGlobe } from "react-icons/fa";
-import { MdTrendingUp, MdSecurity, MdSpeed } from "react-icons/md";
+import { FaMobile, FaShieldAlt, FaRocket, FaArrowRight, FaCode, FaGlobe } from "react-icons/fa";
 
 const projects = [
   {
@@ -129,7 +128,7 @@ export default function Portfolio() {
               <span className="text-slate-700 dark:text-slate-300">Portfolio</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed">
-              Discover how we've helped businesses transform their digital presence with innovative solutions. 
+              Discover how we&apos;ve helped businesses transform their digital presence with innovative solutions. 
               Each project represents our commitment to excellence and innovation.
             </p>
           </div>
@@ -274,7 +273,7 @@ export default function Portfolio() {
             Ready to Start Your Project?
           </h2>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-            Let's create something amazing together. Our team is ready to bring your vision to life 
+            Let&apos;s create something amazing together. Our team is ready to bring your vision to life 
             with the same level of excellence showcased in our portfolio.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

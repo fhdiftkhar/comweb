@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { FaPaperPlane, FaBuilding, FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaArrowRight } from "react-icons/fa";
+import { FaPaperPlane, FaBuilding, FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowRight } from "react-icons/fa";
 import { MdSecurity, MdSupport } from "react-icons/md";
 
 export default function Contact() {
@@ -49,7 +49,7 @@ export default function Contact() {
                     <FaPaperPlane className="text-white text-2xl" />
                   </div>
                   <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">Start Your Project</h2>
-                  <p className="text-slate-600 dark:text-slate-400">Tell us about your vision and we'll get back to you within 24 hours</p>
+                  <p className="text-slate-600 dark:text-slate-400">Tell us about your vision and we&apos;ll get back to you within 24 hours</p>
                 </div>
 
                 {!sent ? (
@@ -57,7 +57,7 @@ export default function Contact() {
                     action="https://api.web3forms.com/submit" 
                     method="POST"
                     className="space-y-6" 
-                    onSubmit={e => { setSent(true); }}
+                    onSubmit={() => { setSent(true); }}
                   >
                     <input type="hidden" name="access_key" value="706b5fe0-b01c-472c-abbf-9d112bf9f6e0" />
                     <input type="hidden" name="subject" value="New Contact Form Submission - Buidoza" />
@@ -233,7 +233,7 @@ export default function Contact() {
           </h2>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed">
             Join hundreds of companies that have accelerated their digital transformation with Buidoza. 
-            Let's build the future together.
+            Let&apos;s build the future together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
