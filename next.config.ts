@@ -4,6 +4,12 @@ const nextConfig: NextConfig = {
   output: 'standalone',
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
   experimental: {
     turbo: {
@@ -22,6 +28,10 @@ const nextConfig: NextConfig = {
     };
     return config;
   },
+  // Optimize for Vercel
+  compress: true,
+  poweredByHeader: false,
+  generateEtags: false,
 };
 
 export default nextConfig;

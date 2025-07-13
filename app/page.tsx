@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { FaRocket, FaCode, FaMobile, FaGlobe, FaArrowRight, FaCheck, FaUsers, FaShieldAlt, FaHeadset, FaClock } from "react-icons/fa";
-import { MdTrendingUp, MdSecurity, MdSpeed, MdAnalytics } from "react-icons/md";
+import { MdTrendingUp, MdSecurity, MdSpeed } from "react-icons/md";
 
 export const metadata: Metadata = {
   title: "Buidoza - No-Code Software Development Experts | Glide Apps, FlutterFlow, AppSheet",

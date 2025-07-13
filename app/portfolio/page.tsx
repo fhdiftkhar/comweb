@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { FaLaptop, FaMobile, FaDatabase, FaCloud, FaShieldAlt, FaRocket, FaArrowRight, FaExternalLinkAlt, FaCode, FaGlobe } from "react-icons/fa";
-import { MdTrendingUp, MdSecurity, MdSpeed, MdAnalytics } from "react-icons/md";
+import { MdTrendingUp, MdSecurity, MdSpeed } from "react-icons/md";
 
 const projects = [
   {
