@@ -1,103 +1,116 @@
-import Image from "next/image";
+import { FaCogs, FaPlug, FaPalette, FaCheckCircle } from "react-icons/fa";
+import { MdInventory, MdEvent } from "react-icons/md";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="relative flex flex-col items-center justify-center min-h-screen p-8 gap-20 font-[family-name:var(--font-geist-sans)] w-full overflow-x-hidden">
+      {/* Animated Background Shapes */}
+      <div className="absolute inset-0 -z-10 pointer-events-none w-full overflow-x-hidden">
+        <div className="absolute top-0 left-0 w-[320px] h-[320px] bg-gradient-to-br from-[var(--accent)] to-indigo-200 opacity-30 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-gradient-to-tr from-indigo-300 to-purple-200 opacity-20 rounded-full blur-3xl animate-pulse" />
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+      <main className="flex flex-col gap-20 items-center text-center max-w-3xl mx-auto w-full">
+        {/* Hero Section */}
+        <section className="flex flex-col sm:flex-row items-center justify-between gap-10 w-full">
+          <div className="flex-1">
+            <h1 className="text-5xl sm:text-6xl font-extrabold mb-6 bg-gradient-to-r from-[var(--accent)] to-indigo-600 bg-clip-text text-transparent drop-shadow-lg">
+              Glide App Development
+            </h1>
+            <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-xl mx-auto sm:mx-0">
+              I turn your ideas into beautiful, user-friendly mobile and web apps—fast, with no code. Get a modern, custom solution for your business or project using Glide.
+            </p>
+            <a
+              href="/contact"
+              className="inline-block bg-gradient-to-r from-[var(--accent)] to-indigo-500 text-white rounded-full px-10 py-4 font-semibold text-xl shadow-xl hover:scale-105 transition-transform duration-200"
+            >
+              Get in Touch
+            </a>
+          </div>
+          <div className="flex-1 flex items-center justify-center">
+            <div className="bg-white/70 dark:bg-black/30 rounded-full p-8 shadow-2xl border border-indigo-100 dark:border-indigo-900">
+              <FaCogs className="text-[var(--accent)] text-7xl drop-shadow-lg" />
+            </div>
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section className="w-full">
+          <h2 className="text-3xl font-bold mb-8 accent">Services</h2>
+          <div className="grid gap-8 sm:grid-cols-3">
+            <div className="card flex flex-col items-center text-center hover:scale-105 transition-transform duration-200">
+              <FaCogs className="text-3xl mb-3 accent" />
+              <h3 className="font-semibold text-lg mb-2">Custom Glide Apps</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">Tailored mobile & web apps for your unique business needs.</p>
+            </div>
+            <div className="card flex flex-col items-center text-center hover:scale-105 transition-transform duration-200">
+              <FaPlug className="text-3xl mb-3 accent" />
+              <h3 className="font-semibold text-lg mb-2">Integrations</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">Connect your Glide app to Google Sheets, APIs, and more.</p>
+            </div>
+            <div className="card flex flex-col items-center text-center hover:scale-105 transition-transform duration-200">
+              <FaPalette className="text-3xl mb-3 accent" />
+              <h3 className="font-semibold text-lg mb-2">UI/UX Design</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">Modern, minimal, and user-friendly interfaces for all devices.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Me Section */}
+        <section className="w-full">
+          <h2 className="text-3xl font-bold mb-8 accent">Why Choose Me?</h2>
+          <ul className="text-left mx-auto max-w-lg space-y-4 text-lg text-gray-700 dark:text-gray-300">
+            <li className="flex items-center gap-3"><FaCheckCircle className="accent" /> <span>Fast delivery and clear communication</span></li>
+            <li className="flex items-center gap-3"><FaCheckCircle className="accent" /> <span>100% no-code expertise with <span className="font-semibold">Glide</span></span></li>
+            <li className="flex items-center gap-3"><FaCheckCircle className="accent" /> <span>Modern, minimal, and responsive design</span></li>
+            <li className="flex items-center gap-3"><FaCheckCircle className="accent" /> <span>Ongoing support and updates</span></li>
+          </ul>
+        </section>
+
+        {/* Mini Portfolio Preview */}
+        <section className="w-full">
+          <h2 className="text-3xl font-bold mb-8 accent">Sample Projects</h2>
+          <div className="grid gap-8 sm:grid-cols-2">
+            <div className="card text-left hover:scale-105 transition-transform duration-200">
+              <div className="flex items-center gap-3 mb-2">
+                <MdInventory className="text-2xl accent" />
+                <h3 className="font-semibold text-lg">Inventory Manager</h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">A custom inventory tracking app for small businesses, built with Glide.</p>
+              <a href="/portfolio" className="accent text-sm font-medium hover:underline">View more</a>
+            </div>
+            <div className="card text-left hover:scale-105 transition-transform duration-200">
+              <div className="flex items-center gap-3 mb-2">
+                <MdEvent className="text-2xl accent" />
+                <h3 className="font-semibold text-lg">Event Planner</h3>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">An event management solution for organizers, featuring RSVP and scheduling tools.</p>
+              <a href="/portfolio" className="accent text-sm font-medium hover:underline">View more</a>
+            </div>
+          </div>
+          <div className="mt-8">
+            <a
+              href="/portfolio"
+              className="inline-block bg-gradient-to-r from-[var(--accent)] to-indigo-500 text-white rounded-full px-8 py-3 font-semibold text-lg shadow-lg hover:scale-105 transition-transform duration-200"
+            >
+              View Full Portfolio
+            </a>
+          </div>
+        </section>
+
+        {/* Final Call to Action */}
+        <section>
+          <div className="flex flex-col items-center gap-4">
+            <span className="text-lg text-gray-700 dark:text-gray-300">Ready to launch your next app?</span>
+            <a
+              href="/contact"
+              className="inline-block bg-gradient-to-r from-[var(--accent)] to-indigo-500 text-white rounded-full px-12 py-5 font-bold text-2xl shadow-2xl hover:scale-105 transition-transform duration-200"
+            >
+              Start Your Project Today
+            </a>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
