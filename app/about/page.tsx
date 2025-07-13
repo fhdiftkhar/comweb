@@ -1,7 +1,7 @@
 "use client";
 
-import { FaRocket, FaCode, FaMobile, FaGlobe, FaArrowRight, FaCheck, FaUsers, FaShieldAlt, FaHeadset, FaClock, FaStar } from "react-icons/fa";
-import { MdTrendingUp, MdSecurity, MdSpeed } from "react-icons/md";
+import { FaRocket, FaCode, FaMobile, FaGlobe, FaArrowRight, FaCheck, FaShieldAlt, FaHeadset, FaStar } from "react-icons/fa";
+import { MdTrendingUp, MdSpeed } from "react-icons/md";
 
 const values = [
   {

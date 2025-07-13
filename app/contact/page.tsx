@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import { FaPaperPlane, FaBuilding, FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowRight } from "react-icons/fa";
+import { FaPaperPlane, FaBuilding, FaPhone, FaEnvelope, FaArrowRight } from "react-icons/fa";
 import { MdSecurity, MdSupport } from "react-icons/md";
 
 export default function Contact() {
