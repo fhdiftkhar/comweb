@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { FaCheck, FaArrowRight, FaRocket, FaCrown, FaBuilding, FaStar, FaShieldAlt, FaHeadset, FaCode, FaDatabase, FaCloud, FaMobile, FaGlobe, FaCalculator } from "react-icons/fa";
-import { MdTrendingUp, MdSecurity, MdSpeed, MdAnalytics } from "react-icons/md";
+import { FaArrowRight, FaRocket, FaHeadset, FaCode, FaMobile, FaGlobe, FaCalculator } from "react-icons/fa";
+import { MdSecurity, MdSpeed, MdAnalytics } from "react-icons/md";
 
 
 
@@ -21,7 +21,7 @@ const services = [
   },
   {
     title: "AppSheet Development",
-    description: "Google's no-code platform for creating powerful mobile applications with Google Workspace integration.",
+    description: "Google&apos;s no-code platform for creating powerful mobile applications with Google Workspace integration.",
     icon: <FaCode className="text-3xl" />,
     price: "From $402"
   },
@@ -34,7 +34,6 @@ const services = [
 ];
 
 export default function Pricing() {
-  const [showCalculator, setShowCalculator] = useState(false);
   const [calculatorData, setCalculatorData] = useState({
     platform: "glide",
     screens: 5,
@@ -419,7 +418,7 @@ export default function Pricing() {
               Why Choose Buidoza?
             </h2>
             <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-              We don't just build software - we build partnerships for success.
+                              We don&apos;t just build software - we build partnerships for success.
             </p>
           </div>
 
@@ -463,7 +462,7 @@ export default function Pricing() {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-            Let's discuss your project requirements and find the perfect solution for your business. 
+                            Let&apos;s discuss your project requirements and find the perfect solution for your business. 
             Our team is ready to help you succeed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

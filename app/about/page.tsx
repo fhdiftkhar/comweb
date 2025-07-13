@@ -1,7 +1,7 @@
 "use client";
 
 import { FaRocket, FaCode, FaMobile, FaGlobe, FaArrowRight, FaCheck, FaUsers, FaShieldAlt, FaHeadset, FaClock, FaStar } from "react-icons/fa";
-import { MdTrendingUp, MdSecurity, MdSpeed, MdAnalytics } from "react-icons/md";
+import { MdTrendingUp, MdSecurity, MdSpeed } from "react-icons/md";
 
 const values = [
   {
@@ -47,7 +47,7 @@ const expertise = [
   },
   {
     platform: "AppSheet",
-    description: "Google's no-code platform for creating powerful mobile applications with Google Workspace integration.",
+    description: "Google&apos;s no-code platform for creating powerful mobile applications with Google Workspace integration.",
     features: ["Google Workspace Integration", "Offline Capability", "Advanced Analytics", "Custom Workflows"],
     icon: <FaCode className="text-2xl" />,
     color: "from-indigo-500 to-indigo-600"
@@ -98,7 +98,7 @@ export default function About() {
                 </span>
         </h1>
               <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
-                We're a team of passionate developers and designers specializing in no-code software development. 
+                We&apos;re a team of passionate developers and designers specializing in no-code software development. 
                 Our expertise spans Glide, FlutterFlow, AppSheet, and Bubble platforms, plus traditional website 
                 and Flutter development.
               </p>
