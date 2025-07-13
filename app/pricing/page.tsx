@@ -80,7 +80,7 @@ export default function Pricing() {
         <path d="M 120 150 Q 225 50 350 150 T 780 150" stroke="#6366f1" strokeWidth="6" strokeDasharray="12 12" opacity="0.18" />
       </svg>
       <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 w-full max-w-6xl relative z-10">
-        {tiers.map((tier, i) => (
+        {tiers.map((tier) => (
           <div
             key={tier.name}
             className={`group relative card flex flex-col items-center text-center p-8 transition-transform duration-300 hover:scale-110 hover:rotate-2 shadow-2xl border-4 ${tier.highlight ? 'border-yellow-400 bg-gradient-to-br from-yellow-100/60 to-orange-100/60 dark:from-yellow-400/20 dark:to-orange-400/10' : 'border-transparent'} ${tier.highlight ? 'z-20 scale-110 shadow-[0_8px_40px_0_rgba(251,191,36,0.18)]' : ''} bg-gradient-to-br ${tier.color} bg-opacity-30 dark:bg-opacity-40 backdrop-blur-lg`}

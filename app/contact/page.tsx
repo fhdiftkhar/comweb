@@ -27,8 +27,8 @@ export default function Contact() {
               <Image src="/profile/about.png" alt="Avatar" width={256} height={256} className="object-cover w-full h-full" />
             </div>
           </div>
-          <h2 className="text-2xl font-bold mb-2 accent text-center">Let's Connect!</h2>
-          <p className="text-base text-gray-700 dark:text-gray-300 text-center max-w-xs mb-4">I love collaborating on new ideas and helping people bring their visions to life. Drop me a message and let's make something amazing together!</p>
+          <h2 className="text-2xl font-bold mb-2 accent text-center">Let&apos;s Connect!</h2>
+          <p className="text-base text-gray-700 dark:text-gray-300 text-center max-w-xs mb-4">I love collaborating on new ideas and helping people bring their visions to life. Drop me a message and let&apos;s make something amazing together!</p>
           <div className="flex items-center gap-2 text-pink-400 font-semibold animate-bounce-slow"><FaSmileBeam /> Friendly, Fast Replies!</div>
         </div>
         {/* Right: Contact Form in Portal */}
@@ -66,7 +66,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <span className="text-xl font-bold text-pink-400">Thank you!</span>
-                  <span className="text-base text-gray-700 dark:text-gray-300 text-center">Your message has been sent. I'll get back to you soon.</span>
+                  <span className="text-base text-gray-700 dark:text-gray-300 text-center">Your message has been sent. I&apos;ll get back to you soon.</span>
                   <button onClick={() => setSent(false)} className="mt-2 bg-gradient-to-r from-pink-400 to-indigo-500 text-white rounded-full px-6 py-2 font-semibold shadow-lg hover:scale-105 transition-transform duration-200">Send Another</button>
                 </div>
               )}

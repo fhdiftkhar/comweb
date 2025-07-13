@@ -71,7 +71,7 @@ export default function About() {
 
       {/* Call to Action */}
       <div className="flex flex-col items-center gap-4 mt-8">
-        <span className="text-xl text-gray-700 dark:text-gray-300 font-medium">Let's build something amazing together.</span>
+        <span className="text-xl text-gray-700 dark:text-gray-300 font-medium">Let&apos;s build something amazing together.</span>
         <a
           href="/contact"
           className="inline-block bg-gradient-to-r from-[var(--accent)] to-indigo-500 text-white rounded-full px-10 py-4 font-bold text-xl shadow-2xl hover:scale-105 transition-transform duration-200 animate-pulse"
