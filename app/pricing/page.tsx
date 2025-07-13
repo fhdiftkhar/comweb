@@ -5,55 +5,55 @@ import { FaRocket, FaStar, FaBriefcase, FaCrown } from "react-icons/fa";
 const tiers = [
   {
     name: "Starter",
-    price: "$199",
+    price: "$5,000",
     icon: <FaRocket className="text-3xl text-cyan-400 mb-2" />,
     features: [
-      "Basic Glide app setup",
-      "Up to 2 screens",
-      "Email support",
-      "1 revision"
+      "Basic web application",
+      "Up to 5 pages",
+      "Responsive design",
+      "Basic SEO optimization"
     ],
     color: "from-cyan-400 to-blue-300",
     highlight: false,
-    fun: "Perfect for launching your first idea!",
+    fun: "Perfect for small businesses!",
   },
   {
-    name: "Pro",
-    price: "$399",
+    name: "Professional",
+    price: "$15,000",
     icon: <FaStar className="text-3xl text-yellow-400 mb-2" />,
     features: [
+      "Full-stack application",
       "Custom features",
-      "Up to 5 screens",
-      "Priority support",
-      "3 revisions"
+      "Database integration",
+      "API development"
     ],
     color: "from-yellow-400 to-orange-400",
     highlight: true,
     fun: "Our most popular plan!",
   },
   {
-    name: "Business",
-    price: "$799",
+    name: "Enterprise",
+    price: "$50,000",
     icon: <FaBriefcase className="text-3xl text-purple-400 mb-2" />,
     features: [
+      "Complex enterprise solution",
+      "Scalable architecture",
       "Advanced integrations",
-      "Up to 10 screens",
-      "Dedicated support",
-      "Unlimited revisions"
+      "24/7 support"
     ],
     color: "from-purple-400 to-indigo-400",
     highlight: false,
-    fun: "For growing teams and big ideas.",
+    fun: "For growing enterprises.",
   },
   {
-    name: "Enterprise",
-    price: "Custom",
+    name: "Custom",
+    price: "Contact Us",
     icon: <FaCrown className="text-3xl text-pink-400 mb-2" />,
     features: [
-      "Full custom solution",
-      "Unlimited screens",
-      "24/7 support",
-      "White-glove onboarding"
+      "Bespoke solution",
+      "Unlimited features",
+      "Dedicated team",
+      "White-glove service"
     ],
     color: "from-pink-400 to-red-400",
     highlight: false,
@@ -73,7 +73,7 @@ export default function Pricing() {
         <div className="absolute top-1/2 left-1/2 w-[120vw] h-32 bg-gradient-to-r from-transparent via-yellow-400 to-transparent opacity-10 blur-2xl -translate-x-1/2 -translate-y-1/2 animate-pulse" />
       </div>
       <h1 className="text-4xl sm:text-5xl font-extrabold mb-12 mt-12 bg-gradient-to-r from-[var(--accent)] to-indigo-600 bg-clip-text text-transparent drop-shadow-lg relative z-20">
-        Pricing
+        Pricing Plans
       </h1>
       {/* Animated Connections */}
       <svg className="absolute hidden lg:block left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0" width="900" height="300" viewBox="0 0 900 300" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +108,7 @@ export default function Pricing() {
               href="/contact"
               className={`mt-auto inline-block bg-gradient-to-r from-[var(--accent)] to-indigo-500 text-white rounded-full px-6 py-2 font-semibold shadow-lg hover:scale-110 transition-transform duration-200 ${tier.highlight ? 'text-lg animate-pulse' : ''}`}
             >
-              {tier.price === 'Custom' ? 'Contact Us' : 'Get Started'}
+              {tier.price === 'Contact Us' ? 'Get Quote' : 'Get Started'}
             </a>
             {/* Confetti for Most Popular on hover */}
             {tier.highlight && (
@@ -123,7 +123,7 @@ export default function Pricing() {
       <div className="fixed bottom-0 left-0 w-full z-50 flex justify-center pointer-events-none">
         <div className="pointer-events-auto bg-gradient-to-r from-[var(--accent)] to-indigo-500 text-white rounded-t-2xl px-8 py-4 shadow-2xl flex items-center gap-4 animate-pulse">
           <span className="font-bold text-lg">Ready to get started?</span>
-          <a href="/contact" className="bg-white text-[var(--accent)] font-bold px-6 py-2 rounded-full shadow-lg hover:scale-110 transition-transform duration-200">Contact Me</a>
+          <a href="/contact" className="bg-white text-[var(--accent)] font-bold px-6 py-2 rounded-full shadow-lg hover:scale-110 transition-transform duration-200">Contact Us</a>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { FaPaperPlane, FaSmileBeam } from "react-icons/fa";
+import { FaPaperPlane, FaBuilding } from "react-icons/fa";
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
@@ -19,17 +19,17 @@ export default function Contact() {
         </defs>
       </svg>
       <div className="relative flex flex-col-reverse sm:flex-row items-center justify-center w-full max-w-4xl mx-auto gap-0 sm:gap-8">
-        {/* Left: Avatar & Message */}
+        {/* Left: Company Logo & Message */}
         <div className="flex-1 flex flex-col items-center justify-center py-10 sm:py-20">
           <div className="relative mb-6">
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-400 via-indigo-400 to-purple-400 blur-2xl opacity-40 animate-pulse" style={{ filter: 'blur(32px)' }} />
-            <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-pink-300 shadow-2xl">
-              <Image src="/profile/about.png" alt="Avatar" width={256} height={256} className="object-cover w-full h-full" />
+            <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-pink-300 shadow-2xl bg-white/80 dark:bg-black/40 flex items-center justify-center">
+              <Image src="/buidoza-logo.svg" alt="Buidoza Logo" width={128} height={38} className="object-contain" />
             </div>
           </div>
-          <h2 className="text-2xl font-bold mb-2 accent text-center">Let&apos;s Connect!</h2>
-          <p className="text-base text-gray-700 dark:text-gray-300 text-center max-w-xs mb-4">I love collaborating on new ideas and helping people bring their visions to life. Drop me a message and let&apos;s make something amazing together!</p>
-          <div className="flex items-center gap-2 text-pink-400 font-semibold animate-bounce-slow"><FaSmileBeam /> Friendly, Fast Replies!</div>
+          <h2 className="text-2xl font-bold mb-2 accent text-center">Get in Touch!</h2>
+          <p className="text-base text-gray-700 dark:text-gray-300 text-center max-w-xs mb-4">Ready to transform your business? Our team is here to help you build innovative solutions that drive growth and success.</p>
+          <div className="flex items-center gap-2 text-pink-400 font-semibold animate-bounce-slow"><FaBuilding /> Professional Team</div>
         </div>
         {/* Right: Contact Form in Portal */}
         <div className="flex-1 flex flex-col items-center justify-center py-10 sm:py-20">
@@ -43,7 +43,7 @@ export default function Contact() {
                 <form className="flex flex-col gap-6" onSubmit={e => { e.preventDefault(); setSent(true); }}>
                   <div className="relative">
                     <input type="text" required placeholder=" " className="peer w-full px-6 py-4 rounded-full border-2 border-transparent focus:border-pink-400 bg-white/90 dark:bg-black/50 shadow-inner focus:shadow-pink-200/40 dark:focus:shadow-pink-400/10 transition-all outline-none text-lg" />
-                    <label className="absolute left-6 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none transition-all duration-200 peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-pink-400 peer-placeholder-shown:top-1/2 peer-placeholder-shown:left-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 bg-white/80 dark:bg-black/40 px-1">Name</label>
+                    <label className="absolute left-6 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none transition-all duration-200 peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-pink-400 peer-placeholder-shown:top-1/2 peer-placeholder-shown:left-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 bg-white/80 dark:bg-black/40 px-1">Company Name</label>
                   </div>
                   <div className="relative">
                     <input type="email" required placeholder=" " className="peer w-full px-6 py-4 rounded-full border-2 border-transparent focus:border-pink-400 bg-white/90 dark:bg-black/50 shadow-inner focus:shadow-pink-200/40 dark:focus:shadow-pink-400/10 transition-all outline-none text-lg" />
@@ -51,7 +51,7 @@ export default function Contact() {
                   </div>
                   <div className="relative">
                     <textarea required placeholder=" " rows={4} className="peer w-full px-6 py-4 rounded-2xl border-2 border-transparent focus:border-pink-400 bg-white/90 dark:bg-black/50 shadow-inner focus:shadow-pink-200/40 dark:focus:shadow-pink-400/10 transition-all outline-none text-lg resize-none" />
-                    <label className="absolute left-6 top-6 text-gray-400 pointer-events-none transition-all duration-200 peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-pink-400 peer-placeholder-shown:top-6 peer-placeholder-shown:left-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 bg-white/80 dark:bg-black/40 px-1">Message</label>
+                    <label className="absolute left-6 top-6 text-gray-400 pointer-events-none transition-all duration-200 peer-focus:-top-3 peer-focus:left-4 peer-focus:text-xs peer-focus:text-pink-400 peer-placeholder-shown:top-6 peer-placeholder-shown:left-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 bg-white/80 dark:bg-black/40 px-1">Project Details</label>
                   </div>
                   <button type="submit" className="mt-2 bg-gradient-to-r from-pink-400 to-indigo-500 text-white rounded-full px-10 py-4 font-bold text-lg shadow-lg hover:scale-105 transition-transform duration-200 active:scale-95 active:shadow-pink-400/40 focus:outline-none focus:ring-4 focus:ring-pink-200 animate-pulse flex items-center gap-2 justify-center">
                     <FaPaperPlane /> Send Message
@@ -66,7 +66,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <span className="text-xl font-bold text-pink-400">Thank you!</span>
-                  <span className="text-base text-gray-700 dark:text-gray-300 text-center">Your message has been sent. I&apos;ll get back to you soon.</span>
+                  <span className="text-base text-gray-700 dark:text-gray-300 text-center">Your message has been sent. Our team will get back to you within 24 hours.</span>
                   <button onClick={() => setSent(false)} className="mt-2 bg-gradient-to-r from-pink-400 to-indigo-500 text-white rounded-full px-6 py-2 font-semibold shadow-lg hover:scale-105 transition-transform duration-200">Send Another</button>
                 </div>
               )}
